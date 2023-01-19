@@ -1,4 +1,4 @@
-namespace MyUtilities 
+namespace StringUtilities 
 {
     public static class StringUtils
     {

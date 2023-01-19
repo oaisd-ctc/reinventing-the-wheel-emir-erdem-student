@@ -1,6 +1,7 @@
 ﻿using System;
 using MathUtilities;
 using ArrayUtilities;
+using StringUtilities;
 
 namespace MyUtilities
 {
