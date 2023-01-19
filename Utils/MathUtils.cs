@@ -1,4 +1,4 @@
-namespace MyUtilities
+namespace MathUtilities
 {
     public static class MathUtils
     {
@@ -188,6 +188,24 @@ namespace MyUtilities
         public static int Power(int x, int y)
         {
             int sum = 1;
+            for (int i = 0; i < y; i++)
+            {
+                sum *= x;
+            }
+            return sum;
+        }
+        public static double Power(double x, double y)
+        {
+            double sum = 1;
+            for (int i = 0; i < y; i++)
+            {
+                sum *= x;
+            }
+            return sum;
+        }
+        public static float Power(float x, float y)
+        {
+            float sum = 1;
             for (int i = 0; i < y; i++)
             {
                 sum *= x;

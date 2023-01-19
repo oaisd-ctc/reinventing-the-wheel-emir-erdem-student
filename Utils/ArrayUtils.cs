@@ -1,4 +1,4 @@
-namespace MyUtilities 
+namespace ArrayUtilities
 {
     public static class ArrayUtils
     {
