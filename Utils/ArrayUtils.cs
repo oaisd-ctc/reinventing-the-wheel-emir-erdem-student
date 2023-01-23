@@ -138,5 +138,23 @@ namespace ArrayUtilities
             }
             return array;
         }
+        public static int GetLength(int[] array)
+        {
+            int length = 0;
+            foreach(int num in array)
+            {
+                length++;
+            }
+            return length;
+        }
+        public static int GetLength(double[] array)
+        {
+            int length = 0;
+            foreach(int num in array)
+            {
+                length++;
+            }
+            return length;
+        }
     }
 }
