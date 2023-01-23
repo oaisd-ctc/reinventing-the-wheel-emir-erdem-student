@@ -147,7 +147,7 @@ namespace ArrayUtilities
             }
             return length;
         }
-        public static int GetLength(double[] array)
+        public static int GetArrayLength(double[] array)
         {
             int length = 0;
             foreach(int num in array)
@@ -156,5 +156,13 @@ namespace ArrayUtilities
             }
             return length;
         }
+        // public static int[] Reverse(int[] array)
+        // {
+        //     for(int i = array.Length - 1, j = 0; i > 0; i--, j++)
+        //     {
+                
+        //     }
+        // }
     }
+    
 }
