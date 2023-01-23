@@ -225,14 +225,12 @@ namespace MathUtilities
         {
             return (int)x;
         }
-        public static int Cubrt(int x)
+        public static double Cubrt(int x)
         {
-            for(int i = 0; i < x; i++)
-            {
-                x /= x;
-            }
-            return x;
+            double answer = Power(x, 1/3);
+            return answer;
+           
         }
-      
+
     }
 }
