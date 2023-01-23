@@ -212,6 +212,27 @@ namespace MathUtilities
             }
             return sum;
         }
+
+        public static int Round(float x)
+        {
+            return (int)x;
+        }
+        public static int Round(double x)
+        {
+            return (int)x;
+        }
+        public static int Round(decimal x)
+        {
+            return (int)x;
+        }
+        public static int Cubrt(int x)
+        {
+            for(int i = 0; i < x; i++)
+            {
+                x /= x;
+            }
+            return x;
+        }
       
     }
 }
