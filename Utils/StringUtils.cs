@@ -43,10 +43,6 @@
 //                 {
 //                     output ++;
 //                 }
-//                 else
-//                 {
-
-//                 }
 //                 return output;
 //             }
 //         }
@@ -70,19 +66,25 @@
 
 //         public static bool HasLetter(String Word, Char Letter)
 //         {
+
+//              int hasletter = 0;
            
 //             for(int i = 0; i < Word.Length; i++)
 //             {
 //                 if(Letter == Word[i])
 //                 {
-//                     return true;
+//                     hasletter++;
 //                 }
-//                 else
-//                 {
-//                     return false;
-//                 }
-                
+//               
 //             }
+                // if (hasletter > 0)
+                // {
+                //     return true;
+                // }
+                // else
+                // {
+                //     return false;
+                // }
 //         }
 //     }
 // }

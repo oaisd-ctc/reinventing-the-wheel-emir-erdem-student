@@ -11,7 +11,7 @@ namespace MyUtilities
         public static void Main(string[] args)
         {
             int[] example = {2, 3, 7, 10, 20, 30, 10, 2, 3, 5};
-            ArrayUtils.SortDescend(example);
+            ArrayUtils.SortAscend(example);
 
             foreach (int num in example)
             {
