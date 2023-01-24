@@ -185,6 +185,18 @@ namespace MathUtilities
         {
             return x * x;
         }
+        public static float Cube(float x)
+        {
+            return x * x * x;
+        }
+        public static double Cube(double x)
+        {
+            return x * x * x;
+        }
+        public static int Cube(int x)
+        {
+            return x * x * x;
+        }
         public static int Power(int x, int y)
         {
             int sum = 1;
@@ -196,21 +208,42 @@ namespace MathUtilities
         }
         public static double Power(double x, double y)
         {
-            double sum = 1;
-            for (int i = 0; i < y; i++)
+            double result = 1;
+            if (y > 0)
             {
-                sum *= x;
+                for (int i = 0; i < y; i++)
+                {
+                    result *= x;
+                }
             }
-            return sum;
+            if (y < 0)
+            {
+                for (int i = -1; i >= y; i--)
+                {
+                    result /= x;
+                }
+            }
+            return result;
+
         }
         public static float Power(float x, float y)
         {
-            float sum = 1;
-            for (int i = 0; i < y; i++)
+            float result = 1;
+            if (y > 0)
             {
-                sum *= x;
+                for (int i = 0; i < y; i++)
+                {
+                    result *= x;
+                }
             }
-            return sum;
+            if (y < 0)
+            {
+                for (int i = -1; i >= y; i--)
+                {
+                    result /= x;
+                }
+            }
+            return result;
         }
 
         public static int Round(float x)
@@ -225,10 +258,29 @@ namespace MathUtilities
         {
             return (int)x;
         }
-        public static double Cubrt(int x)
+        public static decimal Sqrt(decimal number)
         {
-            
-           
+            decimal temp = 0;
+            decimal sqrt = number / 2;
+
+            while (sqrt != temp)
+            {
+                temp = sqrt;
+                sqrt = (number / temp + temp) / 2;
+            }
+            return sqrt;
+        }
+        public static double Sqrt(double number)
+        {
+            double temp = 0;
+            double sqrt = number / 2;
+
+            while (sqrt != temp)
+            {
+                temp = sqrt;
+                sqrt = (number / temp + temp) / 2;
+            }
+            return sqrt;
         }
 
     }
