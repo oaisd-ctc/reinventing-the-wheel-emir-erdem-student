@@ -173,15 +173,15 @@ namespace MathUtilities
                 return x;
             }
         }
-        public static int SqRoot(int x)
+        public static int Square(int x)
         {
             return x * x;
         }
-        public static double SqRoot(double x)
+        public static double Square(double x)
         {
             return x * x;
         }
-        public static float SqRoot(float x)
+        public static float Square(float x)
         {
             return x * x;
         }
@@ -227,8 +227,7 @@ namespace MathUtilities
         }
         public static double Cubrt(int x)
         {
-            double answer = Power(x, 1/3);
-            return answer;
+            
            
         }
 
