@@ -6,17 +6,18 @@ using MathUtilities;
 
 namespace MyUtilities
 {
-    public class Program 
+    public class Program
     {
         public static void Main(string[] args)
         {
-            // int[] example = {2, 3, 7, 10, 20, 30, 10, 2, 3, 5};
-            // ArrayUtils.SortAscend(example);
+            int[] example = { 2, 3, 7, 14, 192, 21 };
+            int[] newArray = ArrayUtils.Reverse(example);
 
-            // foreach (int num in example)
-            // {
-            //     Console.Write(num + " ");
-            // }
+            foreach (int num in newArray)
+            {
+                Console.Write(num + " ");
+            }
+
         }
 
     }
