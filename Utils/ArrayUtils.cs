@@ -156,18 +156,16 @@ namespace ArrayUtilities
             }
             return length;
         }
-        public static int[] Copy(int[] array)
+        public static int[] Copy(int[] array, int[] newArray)
         {
-            int[] newArray = new int[array.Length];
             for (int i = 0; i < array.Length; i++)
             {
                 newArray[i] = array[i];
             }
             return newArray;
         }
-        public static double[] Copy(double[] array)
+        public static double[] Copy(double[] array, double[] newArray)
         {
-            double[] newArray = new double[array.Length];
             for (int i = 0; i < array.Length; i++)
             {
                 newArray[i] = array[i];
