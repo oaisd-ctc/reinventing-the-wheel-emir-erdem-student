@@ -138,6 +138,8 @@ namespace ArrayUtilities
             }
             return array;
         }
+
+        // The following methods are the additional methods
         public static int GetArrayLength(int[] array)
         {
             int length = 0;

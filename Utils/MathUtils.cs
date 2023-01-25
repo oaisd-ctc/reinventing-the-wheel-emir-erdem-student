@@ -173,30 +173,6 @@ namespace MathUtilities
                 return x;
             }
         }
-        public static int Square(int x)
-        {
-            return x * x;
-        }
-        public static double Square(double x)
-        {
-            return x * x;
-        }
-        public static float Square(float x)
-        {
-            return x * x;
-        }
-        public static float Cube(float x)
-        {
-            return x * x * x;
-        }
-        public static double Cube(double x)
-        {
-            return x * x * x;
-        }
-        public static int Cube(int x)
-        {
-            return x * x * x;
-        }
         public static int Power(int x, int y)
         {
             int result = 1;
@@ -292,6 +268,8 @@ namespace MathUtilities
             }
             return sqrt;
         }
+
+        // The following methods are the additional methods
         public static int Floor(double number)
         {
             return (int)number;
@@ -318,6 +296,30 @@ namespace MathUtilities
         {
             decimal answer = number + 1;
             return (int)answer;
+        }
+        public static int Square(int x)
+        {
+            return x * x;
+        }
+        public static double Square(double x)
+        {
+            return x * x;
+        }
+        public static float Square(float x)
+        {
+            return x * x;
+        }
+        public static float Cube(float x)
+        {
+            return x * x * x;
+        }
+        public static double Cube(double x)
+        {
+            return x * x * x;
+        }
+        public static int Cube(int x)
+        {
+            return x * x * x;
         }
 
     }
