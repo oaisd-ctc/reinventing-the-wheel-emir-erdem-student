@@ -10,14 +10,17 @@ namespace MyUtilities
     {
         public static void Main(string[] args)
         {
-            int[] example = { 2, 3, 7, 14, 192, 21 };
-            int[] newArray = ArrayUtils.Reverse(example);
-            int[] newestArray = new int[example.Length];
+            // int[] example = { 2, 3, 7, 14, 192, 21 };
+            // int[] newArray = ArrayUtils.Reverse(example);
+            // int[] newestArray = new int[example.Length];
 
-            foreach (int num in newArray)
-            {
-                Console.Write(num + " ");
-            }
+            // foreach (int num in newArray)
+            // {
+            //     Console.Write(num + " ");
+            // }
+
+
+            Console.WriteLine(MathUtils.Ceiling(4.01));
  
 
         }

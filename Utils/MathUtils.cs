@@ -199,12 +199,22 @@ namespace MathUtilities
         }
         public static int Power(int x, int y)
         {
-            int sum = 1;
-            for (int i = 0; i < y; i++)
+            int result = 1;
+            if (y > 0)
             {
-                sum *= x;
+                for (int i = 0; i < y; i++)
+                {
+                    result *= x;
+                }
             }
-            return sum;
+            if (y < 0)
+            {
+                for (int i = -1; i >= y; i--)
+                {
+                    result /= x;
+                }
+            }
+            return result;
         }
         public static double Power(double x, double y)
         {
@@ -281,6 +291,33 @@ namespace MathUtilities
                 sqrt = (number / temp + temp) / 2;
             }
             return sqrt;
+        }
+        public static int Floor(double number)
+        {
+            return (int)number;
+        }
+        public static int Floor(float number)
+        {
+            return (int)number;
+        }
+        public static int Floor(decimal number)
+        {
+            return (int)number;
+        }
+        public static int Ceiling(double number)
+        {
+            double answer = number + 1;
+            return (int)answer;
+        }
+        public static int Ceiling(float number)
+        {
+            double answer = number + 1;
+            return (int)answer;
+        }
+        public static int Ceiling(decimal number)
+        {
+            decimal answer = number + 1;
+            return (int)answer;
         }
 
     }
