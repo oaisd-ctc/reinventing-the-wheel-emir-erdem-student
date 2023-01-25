@@ -144,6 +144,18 @@ namespace StringUtilities
 
 
         }
-        public static string Replace
+        public static string Remove(string word, char letterRemove)
+        {
+            
+            string newWord = "";
+            foreach(char letter in word)
+            {
+                if(letter == letterRemove)
+                {
+                    newWord = newWord + "";
+                }
+                return newWord;
+            }
+        }
     }
 }
