@@ -154,8 +154,13 @@ namespace StringUtilities
                 {
                     newWord = newWord + "";
                 }
-                return newWord;
+                else
+                {
+                    newWord += letter;
+                }
+                
             }
+            return newWord;
         }
     }
 }
