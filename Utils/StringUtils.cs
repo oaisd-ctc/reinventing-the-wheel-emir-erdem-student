@@ -1,13 +1,13 @@
-namespace StringUtilities 
+namespace StringUtilities
 {
     public static class StringUtils
     {
         public static string ToUpper(string input)
         {
-            string output ="";
-            for(int i = 0; i < input.Length; i++)
+            string output = "";
+            for (int i = 0; i < input.Length; i++)
             {
-                if()
+                if ()
                 {
 
                 }
@@ -22,7 +22,7 @@ namespace StringUtilities
         public static int Length(string input)
         {
             int output = 0;
-            for(int i = 0; i < input.Length; i++)
+            for (int i = 0; i < input.Length; i++)
             {
                 output++;
             }
@@ -34,11 +34,11 @@ namespace StringUtilities
             int length = input.Length - 1;
             string reversie = "";
             char[] array = new char[input.Length];
-            while(length >= 0)
+            while (length >= 0)
             {
-               
+
                 reversie = reversie + input[length];
-                length --;
+                length--;
             }
             return reversie;
         }
@@ -46,14 +46,14 @@ namespace StringUtilities
         public static int CountVowels(string input)
         {
             int output = 0;
-            for(int i = 0; i < input.Length; i++)
+            for (int i = 0; i < input.Length; i++)
             {
-                if(input[i] == 'a' || input[i] == 'e' || input[i] == 'i' || input[i] == 'o' || input[i] == 'u' || input[i] == 'A' || input[i] == 'E' || input[i] == 'I' || input[i] == 'O' || input[i] == 'U' )
+                if (input[i] == 'a' || input[i] == 'e' || input[i] == 'i' || input[i] == 'o' || input[i] == 'u' || input[i] == 'A' || input[i] == 'E' || input[i] == 'I' || input[i] == 'O' || input[i] == 'U')
                 {
-                    output ++;
-                    
+                    output++;
+
                 }
-                
+
             }
             return output;
         }
@@ -61,17 +61,17 @@ namespace StringUtilities
         public static int CountConsonants(string input)
         {
             int output = 0;
-            for(int i = 0; i < input.Length; i++)
+            for (int i = 0; i < input.Length; i++)
             {
-                if(input[i] == 'a' || input[i] == 'e' || input[i] == 'i' || input[i] == 'o' || input[i] == 'u' || input[i] == 'A' || input[i] == 'E' || input[i] == 'I' || input[i] == 'O' || input[i] == 'U')
+                if (input[i] == 'a' || input[i] == 'e' || input[i] == 'i' || input[i] == 'o' || input[i] == 'u' || input[i] == 'A' || input[i] == 'E' || input[i] == 'I' || input[i] == 'O' || input[i] == 'U')
                 {
-                    
+
                 }
                 else
                 {
                     output++;
                 }
-                
+
             }
             return output;
         }
@@ -79,27 +79,71 @@ namespace StringUtilities
         public static bool HasLetter(String Word, Char Letter)
         {
 
-             int hasletter = 0;
+            int hasletter = 0;
             bool letterItHas = false;
-            for(int i = 0; i < Word.Length; i++)
+            for (int i = 0; i < Word.Length; i++)
             {
-                if(Letter == Word[i])
+                if (Letter == Word[i])
                 {
                     hasletter++;
                 }
-              
+
             }
-                if (hasletter > 0)
-                {
-                    letterItHas = true;
-                    
-                }
-                return letterItHas;
-                
-        }
-        public static string spaceOut(string word)
-        {
+            if (hasletter > 0)
+            {
+                letterItHas = true;
+
+            }
+            return letterItHas;
 
         }
+
+        // The following methods are the additional methods
+
+        public static string spaceOut(string word)
+        {
+            string nice = "";
+            foreach (char letter in word)
+            {
+                nice = nice + letter + " ";
+            }
+            return nice;
+        }
+        public static void printDown(string word)
+        {
+            foreach (char letter in word)
+            {
+                Console.WriteLine(letter);
+            }
+        }
+        public static bool Compare(string word, string word2)
+        {
+            int letterAmount = 0;
+            if (word.Length != word2.Length)
+            {
+                return false;
+            }
+            for (int i = 0; i < word.Length; i++)
+            {
+
+                if (word[i] == word2[i])
+                {
+                    letterAmount++;
+                }
+
+            }
+            if (letterAmount == word.Length)
+            {
+                return true;
+
+            }
+            else
+            {
+                return false;
+            }
+
+
+        }
+        public static string Replace
     }
 }
