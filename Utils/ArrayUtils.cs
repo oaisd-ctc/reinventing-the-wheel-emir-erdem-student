@@ -122,6 +122,22 @@ namespace ArrayUtilities
             }
             return array;
         }
+        public static double[] SortAscend(double[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                for (int j = i + 1; j < array.Length; j++)
+                {
+                    if (array[j] < array[i])
+                    {
+                        double temp = array[i];
+                        array[i] = array[j];
+                        array[j] = temp;
+                    }
+                }
+            }
+            return array;
+        }
         public static int[] SortDescend(int[] array)
         {
             for (int i = 0; i < array.Length; i++)
@@ -131,6 +147,22 @@ namespace ArrayUtilities
                     if (array[j] > array[i])
                     {
                         int temp = array[i];
+                        array[i] = array[j];
+                        array[j] = temp;
+                    }
+                }
+            }
+            return array;
+        }
+        public static double[] SortDescend(double[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                for (int j = i + 1; j < array.Length; j++)
+                {
+                    if (array[j] > array[i])
+                    {
+                        double temp = array[i];
                         array[i] = array[j];
                         array[j] = temp;
                     }
