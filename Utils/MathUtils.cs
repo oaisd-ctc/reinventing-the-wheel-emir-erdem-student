@@ -4,6 +4,14 @@ namespace MathUtilities
     {
         public static int Min(int x, int y)
         {
+            ///<summary>
+            ///Finds the minimum of the two
+            ///</summary>
+            ///<param name ="x">The first number.</param>
+            ///<param name ="y">The second number.</param>
+            ///<returns>
+            ///The minimum between the two. 
+            ///</returns>
             if (x < y)
             {
                 return x;
