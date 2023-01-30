@@ -17,6 +17,12 @@ namespace MyUtilities
             {
                 Console.Write(num + " ");
             }
+
+            ArrayUtils.Clear(example);
+            foreach (int num in example)
+            {
+                Console.Write(num + " ");
+            }
         }
 
     }

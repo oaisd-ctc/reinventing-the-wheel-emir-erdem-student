@@ -370,6 +370,22 @@ namespace ArrayUtilities
             }
             return newArray;
         }
+        public static int[] Clear(int[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = 0;
+            }
+            return array; 
+        }
+        public static double[] Clear(double[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = 0;
+            }
+            return array; 
+        }
     }
 
 }
