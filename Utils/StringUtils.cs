@@ -118,7 +118,7 @@ namespace StringUtilities
             return output;
         }
 
-        public static bool HasLetter(String Word, Char Letter)
+        public static bool HasLetter(string Word, char Letter)
         {
             ///<summary>
             ///Checks a string to see if specified character is included 
