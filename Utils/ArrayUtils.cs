@@ -372,6 +372,13 @@ namespace ArrayUtilities
         }
         public static int[] Clear(int[] array)
         {
+            ///<summary>
+            ///Clears the contents of the array
+            ///</summary>
+            ///<param name ="array">The array</param>
+            ///<returns>
+            ///Returns the cleared array
+            ///</returns>
             for (int i = 0; i < array.Length; i++)
             {
                 array[i] = 0;
@@ -380,6 +387,13 @@ namespace ArrayUtilities
         }
         public static double[] Clear(double[] array)
         {
+            ///<summary>
+            ///Clears the contents of the array
+            ///</summary>
+            ///<param name ="array">The array</param>
+            ///<returns>
+            ///Returns the cleared array
+            ///</returns>
             for (int i = 0; i < array.Length; i++)
             {
                 array[i] = 0;
