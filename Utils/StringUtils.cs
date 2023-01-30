@@ -2,15 +2,17 @@ namespace StringUtilities
 {
     public static class StringUtils
     {
+        ///<summary>
+        ///Uppercases the entire string
+        ///</summary>
+        ///<param name ="input">The string</param>
+        ///<returns>
+        ///Returns uppercased string 
+        ///</returns>
+
         // public static string ToUpper(string input)
         // {
-            ///<summary>
-            ///Uppercases the entire string
-            ///</summary>
-            ///<param name ="input">The string</param>
-            ///<returns>
-            ///Returns uppercased string 
-            ///</returns>
+
         //     string output = "";
         //     for (int i = 0; i < input.Length; i++)
         //     {
@@ -21,27 +23,31 @@ namespace StringUtilities
         //     }
         // }
 
+
+        ///<summary>
+        ///Lowercases the entire string
+        ///</summary>
+        ///<param name ="input">The string</param>
+        ///<returns>
+        ///Returns lowercased string 
+        ///</returns>
+
         // public static string ToLower()
         // {
-            ///<summary>
-            ///Lowercases the entire string
-            ///</summary>
-            ///<param name ="input">The string</param>
-            ///<returns>
-            ///Returns lowercased string 
-            ///</returns>
+
 
         // }
 
+        ///<summary>
+        ///Finds the length of a string
+        ///</summary>
+        ///<param name ="input">The string</param>
+        ///<returns>
+        ///Returns the reversed array
+        ///</returns>
+
         public static int Length(string input)
         {
-            ///<summary>
-            ///Finds the length of a string
-            ///</summary>
-            ///<param name ="input">The string</param>
-            ///<returns>
-            ///Returns the reversed array
-            ///</returns>
             int output = 0;
             for (int i = 0; i < input.Length; i++)
             {
@@ -50,15 +56,15 @@ namespace StringUtilities
             return output;
         }
 
+        ///<summary>
+        ///Reverses the word 
+        ///</summary>
+        ///<param name ="input">The string</param>
+        ///<returns>
+        ///Returns the reversed string
+        ///</returns>
         public static string Reverse(string input)
         {
-            ///<summary>
-            ///Reverses the word 
-            ///</summary>
-            ///<param name ="input">The string</param>
-            ///<returns>
-            ///Returns the reversed string
-            ///</returns>
             int length = input.Length - 1;
             string reversie = "";
             char[] array = new char[input.Length];
@@ -71,15 +77,16 @@ namespace StringUtilities
             return reversie;
         }
 
+        ///<summary>
+        ///Counts the amount of vowels in a string 
+        ///</summary>
+        ///<param name ="input">The string</param>
+        ///<returns>
+        ///Returns the vowel count 
+        ///</returns>
+
         public static int CountVowels(string input)
         {
-            ///<summary>
-            ///Counts the amount of vowels in a string 
-            ///</summary>
-            ///<param name ="input">The string</param>
-            ///<returns>
-            ///Returns the vowel count 
-            ///</returns>
             int output = 0;
             for (int i = 0; i < input.Length; i++)
             {
@@ -93,15 +100,16 @@ namespace StringUtilities
             return output;
         }
 
+        ///<summary>
+        ///Counts the amount of consonants in a string 
+        ///</summary>
+        ///<param name ="input">The string</param>
+        ///<returns>
+        ///Returns the consonant count 
+        ///</returns>
+
         public static int CountConsonants(string input)
         {
-            ///<summary>
-            ///Counts the amount of consonants in a string 
-            ///</summary>
-            ///<param name ="input">The string</param>
-            ///<returns>
-            ///Returns the consonant count 
-            ///</returns>
             int output = 0;
             for (int i = 0; i < input.Length; i++)
             {
@@ -118,16 +126,17 @@ namespace StringUtilities
             return output;
         }
 
+        ///<summary>
+        ///Checks a string to see if specified character is included 
+        ///</summary>
+        ///<param name ="Word">The string</param>
+        ///<param name ="Letter">The character</param>
+        ///<returns>
+        ///Returns if the word contains the specified character 
+        ///</returns>
+
         public static bool HasLetter(string Word, char Letter)
         {
-            ///<summary>
-            ///Checks a string to see if specified character is included 
-            ///</summary>
-            ///<param name ="Word">The string</param>
-            ///<param name ="Letter">The character</param>
-            ///<returns>
-            ///Returns if the word contains the specified character 
-            ///</returns>
             int hasletter = 0;
             bool letterItHas = false;
             for (int i = 0; i < Word.Length; i++)
@@ -149,15 +158,15 @@ namespace StringUtilities
 
         // The following methods are the additional methods
 
+        ///<summary>
+        ///Adds spacing between the words 
+        ///</summary>
+        ///<param name ="word">The string</param>
+        ///<returns>
+        ///Returns the spaced out string 
+        ///</returns>
         public static string spaceOut(string word)
         {
-            ///<summary>
-            ///Adds spacing between the words 
-            ///</summary>
-            ///<param name ="word">The string</param>
-            ///<returns>
-            ///Returns the spaced out string 
-            ///</returns>
             string nice = "";
             foreach (char letter in word)
             {
@@ -165,37 +174,39 @@ namespace StringUtilities
             }
             return nice;
         }
+
+        ///<summary>
+        ///Checks to see if string ends with specified character 
+        ///</summary>
+        ///<param name ="word">The string</param>
+        ///<param name ="letter">The character</param>
+        ///<returns>
+        ///Returns a bool determining whether the word ends with the desired character
+        ///</returns>
         public static bool EndsWith(string word, char letter)
         {
-            ///<summary>
-            ///Checks to see if string ends with specified character 
-            ///</summary>
-            ///<param name ="word">The string</param>
-            ///<param name ="letter">The character</param>
-            ///<returns>
-            ///Returns a bool determining whether the word ends with the desired character
-            ///</returns>
             int length = word.Length;
             bool endingWith = false;
-            for(int i = 0; i < word.Length; i++)
+            for (int i = 0; i < word.Length; i++)
             {
-                if(word[i] == letter && word.Length == length)
+                if (word[i] == letter && word.Length == length)
                 {
                     endingWith = true;
                 }
             }
             return endingWith;
         }
+
+        ///<summary>
+        ///Checks to see if both strings are same 
+        ///</summary>
+        ///<param name ="word">The string</param>
+        ///<param name ="word2">The second string</param>
+        ///<returns>
+        ///Returns a bool determining whether the two strings are the same or not 
+        ///</returns>
         public static bool Compare(string word, string word2)
         {
-            ///<summary>
-            ///Checks to see if both strings are same 
-            ///</summary>
-            ///<param name ="word">The string</param>
-            ///<param name ="word2">The second string</param>
-            ///<returns>
-            ///Returns a bool determining whether the two strings are the same or not 
-            ///</returns>
             int letterAmount = 0;
             if (word.Length != word2.Length)
             {
@@ -222,20 +233,21 @@ namespace StringUtilities
 
 
         }
+
+        ///<summary>
+        ///Checks to find the character that the user wants to remove
+        ///</summary>
+        ///<param name ="word">The string</param>
+        ///<param name ="letterRemove">The character to be removed</param>
+        ///<returns>
+        ///Returns the new word without the character
+        ///</returns>
         public static string Remove(string word, char letterRemove)
         {
-            ///<summary>
-            ///Checks to find the character that the user wants to remove
-            ///</summary>
-            ///<param name ="word">The string</param>
-            ///<param name ="letterRemove">The character to be removed</param>
-            ///<returns>
-            ///Returns the new word without the character
-            ///</returns>
             string newWord = "";
-            foreach(char letter in word)
+            foreach (char letter in word)
             {
-                if(letter == letterRemove)
+                if (letter == letterRemove)
                 {
                     newWord = newWord + "";
                 }
@@ -243,7 +255,7 @@ namespace StringUtilities
                 {
                     newWord += letter;
                 }
-                
+
             }
             return newWord;
         }
