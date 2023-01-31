@@ -10,18 +10,22 @@ namespace StringUtilities
         ///Returns uppercased string 
         ///</returns>
 
-        // public static string ToUpper(string input)
-        // {
-
-        //     string output = "";
-        //     for (int i = 0; i < input.Length; i++)
-        //     {
-        //         if ()
-        //         {
-
-        //         }
-        //     }
-        // }
+        public static string ToUpper(string input)
+        {
+            string result = "";
+            for (int i = 0; i < input.Length; i++)
+            {
+                if (input[i] >= 'a' && input[i] <= 'z')
+                {
+                    result = result + (char)(input[i] - 'a' + 'A');
+                }
+                else
+                {
+                    result = result + input[i];
+                }
+            }
+            return result;
+        }
 
 
         ///<summary>
@@ -32,11 +36,23 @@ namespace StringUtilities
         ///Returns lowercased string 
         ///</returns>
 
-        // public static string ToLower()
-        // {
+        public static string ToLower(string input)
+        {
+            string result = "";
+            for (int i = 0; i < input.Length; i++)
+            {
+                if (input[i] >= 'A' && input[i] <= 'Z')
+                {
+                    result = result + (char)(input[i] - 'A' + 'a');
+                }
+                else
+                {
+                    result = result + input[i];
+                }
+            }
+            return result;
 
-
-        // }
+        }
 
         ///<summary>
         ///Finds the length of a string
