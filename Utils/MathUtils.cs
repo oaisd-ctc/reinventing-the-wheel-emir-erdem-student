@@ -452,7 +452,13 @@ namespace MathUtilities
         ///</returns>
         public static int Round(float x)
         {
-            return (int)x;
+            int roundeddown = (int)x;
+
+            if (x - roundeddown >= 0.5)
+            {
+                roundeddown++;
+            }
+            return roundeddown;
         }
 
         ///<summary>
@@ -464,7 +470,13 @@ namespace MathUtilities
         ///</returns>
         public static int Round(double x)
         {
-            return (int)x;
+            int roundeddown = (int)x;
+
+            if (x - roundeddown >= 0.5)
+            {
+                roundeddown++;
+            }
+            return roundeddown;
         }
 
         ///<summary>
